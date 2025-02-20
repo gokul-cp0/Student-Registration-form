@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            .main-div{
+                width: 100%;
+                height: 100vh;
+                background-color: rgb(136, 162, 172);
+            }
+            h1
+            {
+                text-align: center;
+                font-size: 40px;
+            }
+            .container
+            { 
+                padding-top: 10px;
+                background-color: rgba(0, 162, 255, 0.696);
+                width: 70%;
+                height: 600px;
+            }
+            .main-div,.container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            table
+            {
+               border: 7px outset black;
+                width: 900px;
+                height: 10px;
+            }    
+              td
+              {
+                border: 1px solid black;
+                padding: 5px;
+              }
+             #text,select
+             {
+                width: 200px;
+             }
+              
+        </style>
+    </head>
+    <body>
+        <div class="main-div">
+            <div class="container">
+                <table> 
+                    <tr>   
+                        <td colspan="2"><h1>Student Registration Form</h1></td>
+                    </tr>
+                    <tr>
+                        <td><label>Name</label></td>
+                        <td><input type="text" id="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Father Name</label></td>
+                        <td><input type="text" id="text"></td>
+                    </tr>
+                    <tr>
+                       <td><label>Postal Address</label></td>
+                        <td><input type="text" id="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Personal Address</label></td>
+                        <td><input type="text" id="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Sex</label></td>
+                        <td><input type="radio" name="sex">Male
+                        <input type="radio" name="sex">Female </td>
+                    </tr>
+                    <tr>
+                        <td><label>City</label></td>
+                        <td><select>
+                                <option>chennai</option>
+                                <option>Covai</option>
+                                <option>Madurai</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                       <td><label>Course</label></td>
+                         <td><select>
+                             <option>B.sc</option>
+                             <option>B.A</option>
+                             <option>M.sc</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label>District</label></td>
+                        <td><select>
+                            <option>chennai</option>
+                            <option>Covai</option>
+                            <option>Madurai</option>
+                        </select></td> 
+                    </tr>
+                    <tr>
+                       <td><label>State</label></td>
+                        <td><select>
+                            <option>Tamil Nadu</option>
+                            <option>Kerala</option>
+                            <option>Karnataka</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label>PinCode</label></td>
+                        <td><input type="number" id="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email Id</label></td>
+                       <td><input type="email" id="text"></td> 
+                    </tr>
+                    <tr>
+                       <td><label>DOB</label></td>
+                       <td><input type="date" id="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">MobileNo</label></td>
+                        <td><input type="number" id="text"></td>
+                    </tr>
+                    <tr>
+                        <td><button>Reset</button></td>
+                        <td><button>Submit Form</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
